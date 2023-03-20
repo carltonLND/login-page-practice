@@ -8,17 +8,11 @@ type Props = {
   type: string;
 };
 
-export const Input: React.FC<Props> = ({
-  onChange,
-  value,
-  label,
-  name,
-  type,
-}) => {
+export function Input({ onChange, value, label, name, type }: Props) {
   return (
     <label className="input" htmlFor={label}>
       {label}
       <input type={type} name={name} value={value} onChange={onChange} />
     </label>
   );
-};
+}
