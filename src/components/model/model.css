@@ -1,0 +1,22 @@
+.model {
+  background-color: #fbfbf9;
+  width: 25%;
+  height: 75%;
+
+  border-radius: 0.6em;
+  padding: 2em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.model .title {
+  background-color: red;
+  text-align: center;
+}
+
+.model .input {
+  display: flex;
+  flex-direction: column;
+}
