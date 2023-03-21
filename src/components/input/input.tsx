@@ -1,4 +1,5 @@
 import React from "react";
+import "./input.css";
 
 type Props = {
   label: string;
