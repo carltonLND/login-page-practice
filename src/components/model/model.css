@@ -1,21 +1,51 @@
 .model {
+  overflow-y: scroll;
   background-color: #fbfbf9;
-  width: 25%;
-  height: 75%;
+  width: 30em;
+  height: 50em;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 
   border-radius: 0.6em;
-  padding: 2em;
+  padding-top: 1em;
+  padding-left: 3.5em;
+  padding-right: 3.5em;
+
+  box-shadow: 0em 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.4);
 
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.model::-webkit-scrollbar {
+  display: none;
+}
+
 .model .title {
+  color: #3d3a3a;
+  font-size: 2.5em;
+
   text-align: center;
+  margin-top: 1em;
 }
 
 .model .input {
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .model {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+@media (max-width: 425px) {
+  .model {
+    width: 90%;
+    height: 90%;
+  }
 }
