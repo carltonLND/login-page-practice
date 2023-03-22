@@ -37,6 +37,7 @@ function App() {
           type="password"
           placeholder="Type your password"
         />
+        <p>Forgot password?</p>
       </Model>
     </div>
   );
