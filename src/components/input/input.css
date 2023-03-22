@@ -1,4 +1,37 @@
 .input {
-  background-color: black;
-  color: white;
+  color: #21211f;
+  width: 100%;
+}
+
+.input .label {
+  font-weight: 400;
+  font-size: 0.8em;
+
+  padding-top: 0.4em;
+  padding-left: 0.2em;
+}
+
+.input .container {
+  width: 100%;
+
+  border-bottom: 2px solid #b1b1b1;
+  border-color: #d7d7d7;
+  padding: 0.8em;
+  padding-top: 0.4em;
+
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.input input {
+  width: 100%;
+  background: none;
+
+  border: none;
+  outline: none;
+}
+
+.input input::placeholder {
+  color: #b1b1b1;
 }
