@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import { Model } from "./components/model/model";
 import { Input } from "./components/input/input";
+import { Button } from "./components/button/button";
 
 type Credentials = { username: string; password: string };
 
@@ -16,6 +17,10 @@ function App() {
       ...previous,
       [event.target.name]: event.target.value,
     }));
+  }
+
+  function onLoginClick() {
+    alert("Logged in!");
   }
 
   return (
@@ -38,6 +43,7 @@ function App() {
           placeholder="Type your password"
         />
         <p>Forgot password?</p>
+        <Button name="LOGIN" onClick={onLoginClick} />
       </Model>
     </div>
   );
