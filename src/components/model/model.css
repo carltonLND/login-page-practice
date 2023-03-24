@@ -3,6 +3,7 @@
   background-color: #fbfbf9;
   width: 30em;
   height: 50em;
+  max-height: 90%;
 
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -48,7 +49,7 @@
 }
 
 .signupContainer {
-  margin-top: 1em;
+  margin-top: 2em;
   text-align: center;
 }
 
@@ -60,7 +61,7 @@
 
 /* TODO: Leaves awkward whitespace still when zoomed or mobile */
 .footer {
-  margin-top: 10em;
+  margin-top: 11em;
 }
 
 .footer .signupLink {
@@ -72,11 +73,19 @@
     width: 80%;
     height: 80%;
   }
+
+  .footer {
+    margin-top: 4em;
+  }
 }
 
 @media (max-width: 425px) {
   .model {
     width: 90%;
-    height: 90%;
+    height: 80%;
+  }
+
+  .footer {
+    margin-top: 4em;
   }
 }

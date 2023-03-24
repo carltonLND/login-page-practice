@@ -3,7 +3,7 @@ import "./App.css";
 import { Model } from "./components/model/model";
 import { Input } from "./components/input/input";
 import { LoginButton } from "./components/loginButton/button";
-import { SignupButton, ButtonKind } from "./components/signupButton/button";
+import { SignupButton, ButtonKindEnum } from "./components/signupButton/button";
 
 type Credentials = { username: string; password: string };
 
@@ -61,15 +61,15 @@ function App() {
           <p>Or Sign Up Using</p>
           <div className="buttonContainer">
             <SignupButton
-              kind={ButtonKind.facebook}
+              kind={ButtonKindEnum.facebook}
               onClick={onFacebookSignupClick}
             />
             <SignupButton
-              kind={ButtonKind.twitter}
+              kind={ButtonKindEnum.twitter}
               onClick={onTwitterSignupClick}
             />
             <SignupButton
-              kind={ButtonKind.google}
+              kind={ButtonKindEnum.google}
               onClick={onGoogleSignupClick}
             />
           </div>

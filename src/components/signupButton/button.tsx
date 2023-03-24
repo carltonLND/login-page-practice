@@ -1,12 +1,13 @@
 import "./button.css";
 import { FaFacebookF, FaGoogle, FaTwitter } from "react-icons/fa";
 
-export enum ButtonKind {
+export enum ButtonKindEnum {
   facebook = "facebook",
   twitter = "twitter",
   google = "google",
 }
-type Props = { kind: ButtonKind; onClick: () => void };
+
+type Props = { kind: ButtonKindEnum; onClick: () => void };
 
 export function SignupButton({ kind, onClick }: Props) {
   let className: string;
@@ -15,15 +16,15 @@ export function SignupButton({ kind, onClick }: Props) {
   let iconSize: string = "60%";
 
   switch (kind) {
-    case ButtonKind.facebook:
+    case ButtonKindEnum.facebook:
       className = "facebook";
       icon = <FaFacebookF size={iconSize} />;
       break;
-    case ButtonKind.twitter:
+    case ButtonKindEnum.twitter:
       className = "twitter";
       icon = <FaTwitter size={iconSize} />;
       break;
-    case ButtonKind.google:
+    case ButtonKindEnum.google:
       className = "google";
       icon = <FaGoogle size={iconSize} />;
       break;
