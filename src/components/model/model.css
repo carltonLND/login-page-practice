@@ -48,18 +48,19 @@
 }
 
 .signupContainer {
+  margin-top: 1em;
   text-align: center;
 }
 
 .signupContainer .buttonContainer {
   display: flex;
   gap: 0.5em;
-  margin-top: 1em;
+  margin-top: 1.5em;
 }
 
 /* TODO: Leaves awkward whitespace still when zoomed or mobile */
 .footer {
-  margin-top: 11em;
+  margin-top: 10em;
 }
 
 .footer .signupLink {
