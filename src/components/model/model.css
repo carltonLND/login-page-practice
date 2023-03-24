@@ -47,6 +47,25 @@
   flex-direction: column;
 }
 
+.signupContainer {
+  text-align: center;
+}
+
+.signupContainer .buttonContainer {
+  display: flex;
+  gap: 0.5em;
+  margin-top: 1em;
+}
+
+/* TODO: Leaves awkward whitespace still when zoomed or mobile */
+.footer {
+  margin-top: 11em;
+}
+
+.footer .signupLink {
+  color: black;
+}
+
 @media (max-width: 768px) {
   .model {
     width: 80%;

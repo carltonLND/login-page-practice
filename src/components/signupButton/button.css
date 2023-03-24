@@ -1,0 +1,29 @@
+.facebook {
+  background-color: #415792;
+  color: white;
+  width: 3em;
+  height: 3em;
+
+  border-radius: 2em;
+  border-width: 0em;
+}
+
+.twitter {
+  background-color: #49a1ec;
+  color: white;
+  width: 3em;
+  height: 3em;
+
+  border-radius: 10em;
+  border-width: 0em;
+}
+
+.google {
+  background-color: #da4f3e;
+  color: white;
+  width: 3em;
+  height: 3em;
+
+  border-radius: 10em;
+  border-width: 0em;
+}

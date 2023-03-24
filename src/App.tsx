@@ -2,7 +2,8 @@ import { useState } from "react";
 import "./App.css";
 import { Model } from "./components/model/model";
 import { Input } from "./components/input/input";
-import { Button } from "./components/button/button";
+import { LoginButton } from "./components/loginButton/button";
+import { SignupButton, ButtonKind } from "./components/signupButton/button";
 
 type Credentials = { username: string; password: string };
 
@@ -21,6 +22,18 @@ function App() {
 
   function onLoginClick() {
     alert("Logged in!");
+  }
+
+  function onFacebookSignupClick() {
+    alert("Signing up with Facebook!");
+  }
+
+  function onTwitterSignupClick() {
+    alert("Signing up with Twitter!");
+  }
+
+  function onGoogleSignupClick() {
+    alert("Signing up with Google!");
   }
 
   return (
@@ -43,7 +56,28 @@ function App() {
           placeholder="Type your password"
         />
         <p>Forgot password?</p>
-        <Button name="LOGIN" onClick={onLoginClick} />
+        <LoginButton name="LOGIN" onClick={onLoginClick} />
+        <div className="signupContainer">
+          <p>Or Sign Up Using</p>
+          <div className="buttonContainer">
+            <SignupButton
+              kind={ButtonKind.facebook}
+              onClick={onFacebookSignupClick}
+            />
+            <SignupButton
+              kind={ButtonKind.twitter}
+              onClick={onTwitterSignupClick}
+            />
+            <SignupButton
+              kind={ButtonKind.google}
+              onClick={onGoogleSignupClick}
+            />
+          </div>
+          <div className="footer">
+            <p>Or Sign Up Using</p>
+            <p className="signupLink">SIGN UP</p>
+          </div>
+        </div>
       </Model>
     </div>
   );
