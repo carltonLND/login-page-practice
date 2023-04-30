@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import { Model } from "./components/model/model";
+import { Modal } from "./components/modal/modal";
 import { Input } from "./components/input/input";
 import { LoginButton } from "./components/loginButton/button";
 import { SignupButton, ButtonKindEnum } from "./components/signupButton/button";
@@ -38,7 +38,7 @@ function App() {
 
   return (
     <div className="App">
-      <Model title="Login">
+      <Modal title="Login">
         <Input
           onChange={onCredChange}
           value={credentials.username}
@@ -78,7 +78,7 @@ function App() {
             <p className="signupLink">SIGN UP</p>
           </div>
         </div>
-      </Model>
+      </Modal>
     </div>
   );
 }
